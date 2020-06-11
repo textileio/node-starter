@@ -1,4 +1,4 @@
-# Node Starter Project
+# Textile + Node Starter Project
 
 This is a simple shell of a project using Node.js, Express, and Pug. It was originally based on the [TypeScript-Node-Starter project](https://github.com/microsoft/TypeScript-Node-Starter), then simplified, updated, and cleaned up a bit.
 
