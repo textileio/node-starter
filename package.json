@@ -28,7 +28,7 @@
     },
     "dependencies": {
         "@textile/hub": "^0.1.3",
-        "@textile/powergate-client": "0.1.0-beta.9",
+        "@textile/powergate-client": "0.1.0-beta.10",
         "dotenv": "^8.2.0",
         "errorhandler": "^1.5.1",
         "express": "^4.17.1",
