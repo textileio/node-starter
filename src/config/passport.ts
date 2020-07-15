@@ -111,7 +111,7 @@ passport.use(
         let user: User = {
           provider: "twitter",
           providerId: profile.id,
-          email: profile._json.email,
+          email: profile.username,
         }
         const existingUser = await findByProvider("twitter", profile.id)
         if (existingUser) {
