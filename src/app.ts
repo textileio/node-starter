@@ -66,7 +66,7 @@ app.get(
 )
 
 /**
- * OAuth authentication routes for Google. (Sign in)
+ * OAuth authentication routes for Twitter. (Sign in)
  */
 app.get("/auth/twitter", passport.authenticate("twitter", { scope: ["user:email"] }))
 app.get(
