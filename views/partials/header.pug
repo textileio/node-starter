@@ -16,8 +16,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
             a.nav-link(href='/user') User #{user.email}
       ul.nav.navbar-nav
         if !user
-          li.nav-item(class=(title === 'Login with GitHub') ? 'active' : undefined)
-            a.nav-link(href='/auth/github') Login with GitHub
+          li.nav-item.dropdown(class=(title === 'Login') ? 'active' : undefined)
+            a#dropdown01.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Login
+            .dropdown-menu
+              a.dropdown-item(href='/auth/github') Login with GitHub
+              a.dropdown-item(href='/auth/google') Login with Google
+              a.dropdown-item(href='/auth/twitter') Login with Twitter
         else
           li.nav-item
             a.nav-link(href='/logout') Logout

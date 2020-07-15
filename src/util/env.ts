@@ -21,6 +21,14 @@ export const GITHUB_CLIENT_ID = mustResolve("GITHUB_CLIENT_ID")
 
 export const GITHUB_CLIENT_SECRET = mustResolve("GITHUB_CLIENT_SECRET")
 
+export const GOOGLE_CLIENT_ID = mustResolve("GOOGLE_CLIENT_ID")
+
+export const GOOGLE_CLIENT_SECRET = mustResolve("GOOGLE_CLIENT_SECRET")
+
+export const TWITTER_CONSUMER_KEY = mustResolve("TWITTER_CONSUMER_KEY")
+
+export const TWITTER_CONSUMER_SECRET = mustResolve("TWITTER_CONSUMER_SECRET")
+
 function mustResolve(name: string) {
   const value = process.env[name]
   if (!value) {
