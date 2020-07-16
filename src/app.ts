@@ -42,12 +42,36 @@ app.get("/logout", (req, res) => {
 })
 
 /**
- * OAuth authentication routes. (Sign in)
+ * OAuth authentication routes for GitHub. (Sign in)
  */
 app.get("/auth/github", passport.authenticate("github", { scope: ["user:email"] }))
 app.get(
   "/auth/github/callback",
   passport.authenticate("github", { failureRedirect: "/" }),
+  (_, res) => {
+    res.redirect("/user")
+  },
+)
+
+/**
+ * OAuth authentication routes for Google. (Sign in)
+ */
+app.get("/auth/google", passport.authenticate("google", { scope: ["profile", "email"] }))
+app.get(
+  "/auth/google/callback",
+  passport.authenticate("google", { failureRedirect: "/" }),
+  (_, res) => {
+    res.redirect("/user")
+  },
+)
+
+/**
+ * OAuth authentication routes for Twitter. (Sign in)
+ */
+app.get("/auth/twitter", passport.authenticate("twitter", { scope: ["user:email"] }))
+app.get(
+  "/auth/twitter/callback",
+  passport.authenticate("twitter", { failureRedirect: "/" }),
   (_, res) => {
     res.redirect("/user")
   },
