@@ -37,7 +37,7 @@
     "passport-github2": "^0.1.12",
     "passport-google-oauth20": "^2.0.0",
     "passport-twitter": "^1.0.4",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "sqlite": "^4.0.14",
     "sqlite3": "^5.0.0",
     "winston": "^3.3.3"
