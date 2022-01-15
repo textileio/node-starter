@@ -73,7 +73,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "prettier-plugin-organize-imports": "^1.1.1",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "supertest": "^5.0.0",
     "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",
