@@ -39,7 +39,7 @@
     "passport-twitter": "^1.0.4",
     "pug": "^3.0.0",
     "sqlite": "^4.0.14",
-    "sqlite3": "^5.0.0",
+    "sqlite3": "^5.0.3",
     "winston": "^3.3.3"
   },
   "devDependencies": {
